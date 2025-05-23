@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Architektūros Dienos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
+      color: #111;
+    }
+    header {
+      background-color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 5rem 2rem;
+      background: white;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.25rem;
+      color: #222;
+    }
+    .card p {
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Open Vilnius</h1>
+    <nav>
+      <a href="#">Apie</a>
+      <a href="#">Pastatai</a>
+      <a href="#">Programa</a>
+      <a href="#">Kontaktai</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Atverkime Vilnių kartu</h2>
+    <p>Architektūros savaitgalis kviečia atrasti išskirtinius pastatus ir pažinti miestą iš vidaus.</p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h3>Šiuolaikinis menų centras</h3>
+      <p>Modernus pastatas su unikalia erdvių architektūra.</p>
+    </div>
+    <div class="card">
+      <h3>Istorinis banko pastatas</h3>
+      <p>1910-ųjų architektūros pavyzdys su įspūdingu interjeru.</p>
+    </div>
+    <div class="card">
+      <h3>Ekologiškas biuras</h3>
+      <p>Tvarumo principus įkūnijantis šiuolaikinis biuras.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Open House Vilnius. Visos teisės saugomos.
+  </footer>
+</body>
+</html>
