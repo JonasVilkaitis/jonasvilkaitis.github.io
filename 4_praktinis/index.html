@@ -3,114 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Open Architektūros Dienos</title>
+  <title>Mano žemėlapių portalas</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f5f5f5;
-      color: #111;
-    }
-    header {
-      background-color: white;
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.5rem;
-      font-weight: 800;
-    }
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: #111;
-      font-weight: 600;
-    }
-    .hero {
-      padding: 5rem 2rem;
-      background: white;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      color: #555;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 4rem 2rem;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-    }
-    .card h3 {
-      margin-top: 0;
-      font-size: 1.25rem;
-      color: #222;
-    }
-    .card p {
-      color: #555;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #eee;
-      font-size: 0.9rem;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>Open Vilnius</h1>
+    <h1>Mano žemėlapių portalas</h1>
     <nav>
-      <a href="#">Apie</a>
-      <a href="#">Pastatai</a>
-      <a href="#">Programa</a>
-      <a href="#">Kontaktai</a>
+      <a href="index.html">Pradžia</a>
+      <a href="#services">Paslaugos</a>
+      <a href="#gallery">Žemėlapių galerija</a>
+      <a href="contact.html">Kontaktai</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Atverkime Vilnių kartu</h2>
-    <p>Architektūros savaitgalis kviečia atrasti išskirtinius pastatus ir pažinti miestą iš vidaus.</p>
+  <section class="hero section-home">
+    <h2>Žemėlapių portalas</h2>
+    <p>Šiame portale kviečiame peržvelgti visus šiame kurse sukurtus mano žemėlapius.</p>
   </section>
 
-  <section class="grid">
+  <section class="hero section-services" id="services">
+    <h2>Paslaugos</h2>
+    <img src="bg_intro.png" alt="Kalnų grafika" width="200">
+    <p>Šis portalas teikia žemėlapių viešinimo paslaugą.</p>
+  </section>
+  
+  <section class="section-gallery" id="gallery">
     <div class="card">
-      <h3>Šiuolaikinis menų centras</h3>
-      <p>Modernus pastatas su unikalia erdvių architektūra.</p>
+        <div class="card-row">
+          <div class="card-text">
+            <h3>NT sandoriai 2022</h3>
+            <p>2022 metais Lietuvoje sudaryti NT sandoriai.</p>
+            <a class="card-button" href="https://jonasvilkaitis.github.io/1_praktinis/map_1.html" target="_blank">Atidaryti žemėlapį</a>
+          </div>
+          <div class="card-image-bubble" style="background-image: url('map1.PNG'); background-size: cover; background-position: center;"></div>
+        </div>
+      </div>
+      
+    <div class="card">
+      <div class="card-row reverse">
+        <div class="card-text">
+          <h3>Švietimo įstaigos pagal gyventojus</h3>
+          <p>Švietimo įstaigų pasiskirstymas pagal gyventojų skaičių.</p>
+          <a class="card-button" href="https://jonasvilkaitis.github.io/1_praktinis/map_2.html" target="_blank">Atidaryti žemėlapį</a>
+        </div>
+        <div class="card-image-bubble" style="background-image: url('Map2.PNG'); background-size: cover; background-position: center;"></div>
+      </div>
     </div>
+  
     <div class="card">
-      <h3>Istorinis banko pastatas</h3>
-      <p>1910-ųjų architektūros pavyzdys su įspūdingu interjeru.</p>
+      <div class="card-row">
+        <div class="card-text">
+          <h3>Taršos židiniai</h3>
+          <p>Galimi taršos židiniai ir jų pavojingumo lygiai.</p>
+          <a class="card-button" href="https://jonasvilkaitis.github.io/1_praktinis/map_3.html" target="_blank">Atidaryti žemėlapį</a>
+        </div>
+        <div class="card-image-bubble" style="background-image: url('Map3.PNG'); background-size: cover; background-position: center;"></div>
+      </div>
     </div>
+  
     <div class="card">
-      <h3>Ekologiškas biuras</h3>
-      <p>Tvarumo principus įkūnijantis šiuolaikinis biuras.</p>
+      <div class="card-row reverse">
+        <div class="card-text">
+          <h3>Geoportal integracija</h3>
+          <p>NT sandorių žemėlapis su geoportal.lt duomenimis.</p>
+          <a class="card-button" href="https://jonasvilkaitis.github.io/2_praktinis/index.html" target="_blank">Atidaryti žemėlapį</a>
+        </div>
+        <div class="card-image-bubble" style="background-image: url('Map4.PNG'); background-size: cover; background-position: center;"></div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-row">
+        <div class="card-text">
+          <h3>Gyventojų problemų aplikacija</h3>
+          <p>Registruokite problemas ir siūlymus bendruomenėje.</p>
+          <a class="card-button" href="https://jonasvilkaitis.github.io/3_praktinis/index.html" target="_blank">Atidaryti žemėlapį</a>
+        </div>
+        <div class="card-image-bubble" style="background-image: url('Map5.PNG'); background-size: cover; background-position: center;"></div>
+      </div>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Open House Vilnius. Visos teisės saugomos.
+    <div class="footer-container">
+      <p>© 2025 Mano žemėlapių portalas.</p>
+      <div class="footer-links">
+        <a href="index.html">Pradžia</a>
+        <a href="contact.html">Kontaktai</a>
+      </div>
+    </div>
   </footer>
-</body>
-</html>
+  
