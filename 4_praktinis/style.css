@@ -14,7 +14,6 @@
     color: var(--primary-color);
   }
   
-  /* Header */
   header {
     background-color: var(--bg-white);
     padding: 1.5rem 2rem;
@@ -67,7 +66,6 @@
     color: var(--accent-color);
   }
   
-  /* Hero sections */
   .hero {
     padding: 4rem 2rem;
     text-align: center;
@@ -85,7 +83,6 @@
     margin: 0 auto;
   }
   
-  /* Sections */
   .section-home {
     background-color: var(--bg-white);
   }
@@ -103,7 +100,6 @@
     align-items: center;
   }
   
-  /* Card layout */
   .card {
     background: var(--card-bg);
     border-radius: 16px;
@@ -130,7 +126,6 @@
     flex-direction: row-reverse;
   }
   
-  /* Text styling */
   .card-text {
     flex: 1 1 50%;
     display: flex;
@@ -150,7 +145,6 @@
     line-height: 1.5;
   }
   
-  /* Iframe bubble container */
   .card-image-bubble {
     flex: 1 1 40%;
     aspect-ratio: 1 / 1;
@@ -171,7 +165,6 @@
     border: none;
   }
   
-  /* Button styling */
   .card-button {
     display: inline-block;
     padding: 0.7rem 1.4rem;
@@ -188,7 +181,6 @@
     background-color: #005f99;
   }
   
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     .card-row,
     .card-row.reverse {
@@ -220,14 +212,13 @@
     }
   }
   
-/* Footer */
 footer {
     text-align: center;
     padding: 2rem;
-    background: var(--bg-light-grey); /* toks pat kaip paslaugų skiltis */
+    background: var(--bg-light-grey);
     border-top: 1px solid var(--border-color);
     font-size: 0.95rem;
-    color: #000000; /* juodas tekstas */
+    color: #000000;
   }
   
   .footer-container {
@@ -252,7 +243,6 @@ footer {
     text-decoration: underline;
   }
   
-  /* Apie autorių sekcija */
 .author-section {
   display: flex;
   flex-direction: column;
